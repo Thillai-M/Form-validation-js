@@ -1,0 +1,22 @@
+
+.btn{
+    border: none;
+    outline: none;
+    display: inline-flex;
+    gap: 5px;
+    font-size: 16px;
+    background: none;
+    color: var(--c-grey);
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.btn.btn-submit{
+    background-color: var(--c-blue);
+    color: var(--c-white);
+    padding: 8px 17px;
+    box-shadow:0px 2px 4px  rgb(139, 157, 174)
+}
+.icon{
+    transform: rotate(-40deg);
+}

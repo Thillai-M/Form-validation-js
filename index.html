@@ -1,0 +1,145 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-form</title>
+
+    <!-- CSS -->
+
+		<!-- common-style -->
+		<link rel="stylesheet" href="./css/color.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/global-value.css" />
+		<link rel="stylesheet" href="./css/font.css" />
+        <link rel="stylesheet" href="./css/flex.css" />
+        <link rel="stylesheet" href="./css/style-bits.css" />
+
+        <!-- component-style -->
+		<link rel="stylesheet" href="./css/home.css" />
+		<link rel="stylesheet" href="./css/button.css" />
+		<!-- CSS -->
+        
+    <!-- Box-icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    
+    <!-- script -->
+    <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+
+    <div class="form-container D-flx">
+        <div class="sidebar"></div> 
+        
+        <div class="details-page">
+            <div><h3 class="c-blue mB50">Basic-Details</h3></div>
+
+            <form class="form-page D-flx G-20">
+                <div class="form-box">
+                    <div class="input-grp mB30">
+                            <div class="lable"><label for="name">First Name</label></div> 
+                            <div class="in-parent"><input class="input" id="fname-input" type="text"></div>
+                            <div class="mT5"><span class="error" id="fname-inputerror">Enter first name</span></div>
+                    </div>
+
+                    <div class="input-grp mB30">
+                        <div class="lable"><label for="Email">Email ID</label></div> 
+                        <div class="in-parent"><input class="input" id="mail-input" type="text"></div>
+                        <div class="mT5"><span class="error" id="mail-inputerror">Enter Email</span></div>
+                        <div><span class="error" id="mailmatch-inputerror">Invalid email address.</span></div>
+                </div>
+
+                <div class="input-grp mB30">
+                    <div class="lable"><label for="country">Country</label></div> 
+                        
+                    <div class="in-parent">
+                        <select class="input" id="country-input" name="country">
+
+                        <option value="">Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">India</option>
+                        <option value="uk">United Kingdom</option>
+
+                        </select>
+                        
+                    </div>
+                    <div class="mT5"><span class="error" id="country-inputerror">Select Your country</span></div>
+            </div>
+
+
+            <div class="input-grp mB30">
+                <div class="lable"><label for="phone">Phone Number</label></div> 
+                <div class="in-parent"> <input id="Phone-input"   class="input"  type="tel"></div>
+                <div class="mT5"><span class="error" id="phone-inputerror">Enter phone number</span></div>
+                <div><span class="error" id="numbermatch-inputerror">Invalid Phone Number</span></div>
+            </div>
+            <div><button class="btn" type="reset">Reset All </button></div>
+        
+                </div>
+
+            
+                <div class="form-box">
+                    <div class="input-grp mB30">
+                            <div class="lable"><label for="name">Last Name</label></div> 
+                            <div class="in-parent"><input class="input" id="lname-input" type="text"></div>
+                            <div class="mT5"><span class="error" id="lname-inputerror">Enter Last name</span></div>
+                    </div>
+
+                    <div class="input-grp mB30">
+                        <div class="D-flx AI-C JC-SB"><label for="Email">Your user ID</label><i class='bx bxs-lock'></i></div> 
+                        <div class="in-parent"><input class="input" id="user-input" type="text"></div>
+                        <div class="mT5"><span class="error" id="user-inputerror">Enter User ID</span> </div>
+                        <div class="mT5"><span class="error" id="user-length-inputerror">Enter full User ID</span> </div>
+                    </div>
+
+                    <div class="input-grp D-flx G-15  AI-C mB45">
+                    
+                        <div class="input-grp-in"> 
+                            <div class="lable"><label for="state">State</label></div> 
+                            <select class="input select" id="state-input" name="state">
+    
+                            <option value="">select state</option>
+                            <option value="usa">Tamilnad</option>
+                            <option value="canada">Kerala</option>
+                            <option value="uk">Andra</option>
+                            </select>
+                            <div class="mT5"><span class="error" id="state-inputerror">Select Your state</span></div>
+                        </div>
+                        
+                    
+                    
+                    
+                        <div class="input-grp-in"> 
+                            <div class="lable"><label for="city">City</label></div> 
+                            <select class="input  select" id="city-input" name="state">
+    
+                            <option value="">select city</option>
+                            <option value="usa">chennai</option>
+                            <option value="canada">Kochin</option>
+                            <option value="uk">munnar</option>
+    
+                            </select>
+                            <div class="mT5"><span class="error" id="city-inputerror">Select Your city</span></div>
+                        </div>
+                    
+                    
+                        
+                    </div>
+                    <div class="input-grp mB30">
+                        <div class="in-parent"><input class="input" type="tel" id="reference-input" placeholder="Reference code"></div>
+                        <div class="mT5"><span class="error" id="reference-inputerror">Enter code</span></div>
+                        <div class="mT5"><span class="error" id="refrence-length-inputerror">Enter full code</span> </div>
+                    </div>
+                    <div class="D-flx JC-FE"><button type="submit" class="btn btn-submit" onclick="validate_form(event)">Continue</button></div>
+                    
+                    </div>
+        
+        </form>
+    
+            
+    </div>
+    </div>
+
+</body>
+</html>

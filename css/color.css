@@ -1,0 +1,18 @@
+
+:root{
+    --c-red:#e30707;
+    --c-light-grey:#f4f8fb;
+    --c-light-grey-10:#e9eef4;
+    --c-light-grey-15:#d9e2ebee;
+    --c-light-grey-20:#94b8d737;
+    --c-light-grey-30:#a5c5e1fc;
+    --c-light-navy:#2b3648;
+    --c-grey:#878383;
+    --c-black:#000000;
+    --c-white:#fff;
+    --c-blue:rgb(0, 140, 255);
+}
+
+.c-white{color:var(--c-white);}
+.c-black{color:var(--c-black);}
+.c-blue{color: var(--c-blue);}
